@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velvet & Gold — Fine Dining Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="logo">Velvet <span>& Gold</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active" data-section="home">Home</a></li>
+        <li><a href="#menu" data-section="menu">Menu</a></li>
+        <li><a href="#about" data-section="about">About</a></li>
+        <li><a href="#contact" data-section="contact">Contact</a></li>
+      </ul>
+      <div class="mobile-toggle" id="mobileToggle" onclick="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <p class="hero-subtitle">Est. 2018 — Lahore, Pakistan</p>
+        <h1 class="hero-title">
+          Where <span class="gold">Culinary Art</span><br />Meets Elegance
+        </h1>
+        <p class="hero-desc">
+          An intimate fine dining experience crafted with passion, precision,
+          and the finest locally sourced ingredients.
+        </p>
+        <a href="#contact" class="btn-gold">Reserve a Table</a>
+        <div class="scroll-hint">
+          <span>Discover</span>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+      </div>
+
+      <section
+        style="
+          padding: 100px 20px;
+          text-align: center;
+          max-width: 800px;
+          margin: 0 auto;
+        ">
+        <p
+          style="
+            font-family: &quot;Playfair Display&quot;, serif;
+            font-style: italic;
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+          ">
+          "Every dish tells a story"
+        </p>
+        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8">
+          At Velvet & Gold, we believe dining is more than sustenance — it is
+          theater, memory, and connection. Our kitchen bridges traditional
+          Pakistani flavors with modern European technique, creating plates that
+          surprise and comfort in equal measure.
+        </p>
+        <div style="margin-top: 40px">
+          <a href="#menu" class="btn-outline">Explore Our Menu</a>
+        </div>
+      </section>
+
+      <section style="padding: 0 20px 100px">
+        <div
+          style="
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+          ">
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-radius: 4px;
+              border: 1px solid var(--border);
+            ">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80"
+              alt="Interior"
+              style="
+                width: 100%;
+                height: 280px;
+                object-fit: cover;
+                display: block;
+                filter: brightness(0.7);
+                transition: transform 0.5s ease;
+              "
+              onmouseover="this.style.transform = 'scale(1.05)'"
+              onmouseout="this.style.transform = 'scale(1)'" />
+            <div
+              style="
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 30px;
+                background: linear-gradient(
+                  to top,
+                  rgba(13, 13, 13, 0.9),
+                  transparent
+                );
+              ">
+              <h4
+                style="
+                  font-family: &quot;Playfair Display&quot;, serif;
+                  font-size: 1.2rem;
+                  margin-bottom: 6px;
+                ">
+                Intimate Ambiance
+              </h4>
+              <p style="color: var(--text-muted); font-size: 0.85rem">
+                Soft lighting, curated music, and thoughtful design
+              </p>
+            </div>
+          </div>
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-radius: 4px;
+              border: 1px solid var(--border);
+            ">
+            <img
+              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80"
+              alt="Food"
+              style="
+                width: 100%;
+                height: 280px;
+                object-fit: cover;
+                display: block;
+                filter: brightness(0.7);
+                transition: transform 0.5s ease;
+              "
+              onmouseover="this.style.transform = 'scale(1.05)'"
+              onmouseout="this.style.transform = 'scale(1)'" />
+            <div
+              style="
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 30px;
+                background: linear-gradient(
+                  to top,
+                  rgba(13, 13, 13, 0.9),
+                  transparent
+                );
+              ">
+              <h4
+                style="
+                  font-family: &quot;Playfair Display&quot;, serif;
+                  font-size: 1.2rem;
+                  margin-bottom: 6px;
+                ">
+                Farm to Table
+              </h4>
+              <p style="color: var(--text-muted); font-size: 0.85rem">
+                Fresh ingredients sourced from local Punjab farms
+              </p>
+            </div>
+          </div>
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-radius: 4px;
+              border: 1px solid var(--border);
+            ">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80"
+              alt="Wine"
+              style="
+                width: 100%;
+                height: 280px;
+                object-fit: cover;
+                display: block;
+                filter: brightness(0.7);
+                transition: transform 0.5s ease;
+              "
+              onmouseover="this.style.transform = 'scale(1.05)'"
+              onmouseout="this.style.transform = 'scale(1)'" />
+            <div
+              style="
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 30px;
+                background: linear-gradient(
+                  to top,
+                  rgba(13, 13, 13, 0.9),
+                  transparent
+                );
+              ">
+              <h4
+                style="
+                  font-family: &quot;Playfair Display&quot;, serif;
+                  font-size: 1.2rem;
+                  margin-bottom: 6px;
+                ">
+                Curated Wines
+              </h4>
+              <p style="color: var(--text-muted); font-size: 0.85rem">
+                A handpicked selection from across the globe
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+      <div class="section-header">
+        <h2>Our <span style="color: var(--gold)">Menu</span></h2>
+        <div class="gold-line"></div>
+        <p>
+          A curated selection of dishes, each prepared with meticulous attention
+          to flavor, texture, and presentation.
+        </p>
+      </div>
+
+      <div class="menu-container">
+        <div class="menu-tabs">
+          <button
+            class="menu-tab active"
+            onclick="showMenuCategory('starters', this)">
+            Starters
+          </button>
+          <button class="menu-tab" onclick="showMenuCategory('mains', this)">
+            Main Course
+          </button>
+          <button class="menu-tab" onclick="showMenuCategory('drinks', this)">
+            Drinks
+          </button>
+          <button class="menu-tab" onclick="showMenuCategory('desserts', this)">
+            Desserts
+          </button>
+        </div>
+
+        <!-- Starters -->
+        <div class="menu-category active" id="starters">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=80"
+                alt="Truffle Arancini" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Truffle Arancini</h4>
+                  <span class="menu-card-price">Rs 1,450</span>
+                </div>
+                <p class="menu-card-desc">
+                  Crispy risotto balls infused with black truffle, served with
+                  saffron aioli and micro herbs.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80"
+                alt="Prawn Tempura" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Prawn Tempura</h4>
+                  <span class="menu-card-price">Rs 1,890</span>
+                </div>
+                <p class="menu-card-desc">
+                  Jumbo prawns in light crispy batter, served with yuzu kosho
+                  and ponzu dipping sauce.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80"
+                alt="Burrata Salad" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Burrata & Heirloom</h4>
+                  <span class="menu-card-price">Rs 1,650</span>
+                </div>
+                <p class="menu-card-desc">
+                  Creamy burrata with heirloom tomatoes, basil oil, aged
+                  balsamic, and toasted pine nuts.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80"
+                alt="Lamb Skewers" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Spiced Lamb Skewers</h4>
+                  <span class="menu-card-price">Rs 1,750</span>
+                </div>
+                <p class="menu-card-desc">
+                  Tender lamb marinated in harissa and yogurt, chargrilled and
+                  served with mint chutney.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=80" alt="Soup" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Wild Mushroom Soup</h4>
+                  <span class="menu-card-price">Rs 980</span>
+                </div>
+                <p class="menu-card-desc">
+                  Velvety porcini and shiitake soup finished with truffle oil
+                  and crispy sage leaves.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80"
+                alt="Bruschetta" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Wagyu Beef Tartare</h4>
+                  <span class="menu-card-price">Rs 2,450</span>
+                </div>
+                <p class="menu-card-desc">
+                  Hand-cut wagyu with capers, shallots, quail egg, and toasted
+                  sourdough crisps.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Course -->
+        <div class="menu-category" id="mains">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Ribeye" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Prime Ribeye Steak</h4>
+                  <span class="menu-card-price">Rs 4,950</span>
+                </div>
+                <p class="menu-card-desc">
+                  350g dry-aged ribeye, chargrilled to perfection, served with
+                  roasted bone marrow and red wine jus.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80" alt="Sea Bass" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Chilean Sea Bass</h4>
+                  <span class="menu-card-price">Rs 3,850</span>
+                </div>
+                <p class="menu-card-desc">
+                  Pan-seared sea bass with saffron beurre blanc, fennel confit,
+                  and crispy potato rosti.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=80" alt="Duck" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Duck Breast Confit</h4>
+                  <span class="menu-card-price">Rs 3,450</span>
+                </div>
+                <p class="menu-card-desc">
+                  Slow-cooked duck breast with cherry gastrique, parsnip purée,
+                  and candied walnuts.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Lamb Rack" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Herb-Crusted Lamb Rack</h4>
+                  <span class="menu-card-price">Rs 4,250</span>
+                </div>
+                <p class="menu-card-desc">
+                  New Zealand lamb with rosemary and Dijon crust, ratatouille,
+                  and lamb jus reduction.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Pasta" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Lobster Linguine</h4>
+                  <span class="menu-card-price">Rs 3,650</span>
+                </div>
+                <p class="menu-card-desc">
+                  Fresh hand-rolled linguine with whole lobster, cherry
+                  tomatoes, garlic, and white wine butter.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80"
+                alt="Vegetarian" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Truffle Risotto</h4>
+                  <span class="menu-card-price">Rs 2,850</span>
+                </div>
+                <p class="menu-card-desc">
+                  Carnaroli rice with wild mushrooms, black truffle shavings,
+                  parmesan crisp, and chive oil.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-category" id="drinks">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Cocktail" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Velvet Old Fashioned</h4>
+                  <span class="menu-card-price">Rs 1,250</span>
+                </div>
+                <p class="menu-card-desc">
+                  Bourbon, smoked maple syrup, orange bitters, and a luxardo
+                  cherry — our signature cocktail.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Wine" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Gold Reserve Red</h4>
+                  <span class="menu-card-price">Rs 2,800/gls</span>
+                </div>
+                <p class="menu-card-desc">
+                  A bold Cabernet Sauvignon from Napa Valley with notes of
+                  blackcurrant, vanilla, and oak.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80" alt="Mocktail" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Elderflower Fizz</h4>
+                  <span class="menu-card-price">Rs 650</span>
+                </div>
+                <p class="menu-card-desc">
+                  Elderflower cordial, fresh lime, sparkling water, and cucumber
+                  ribbons — refreshingly elegant.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Whiskey" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Single Malt Flight</h4>
+                  <span class="menu-card-price">Rs 3,200</span>
+                </div>
+                <p class="menu-card-desc">
+                  A curated trio of 18-year aged single malts from Islay,
+                  Speyside, and the Highlands.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Coffee" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Artisan Espresso</h4>
+                  <span class="menu-card-price">Rs 380</span>
+                </div>
+                <p class="menu-card-desc">
+                  Single-origin Ethiopian beans, freshly ground and pulled to
+                  perfection with a golden crema.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=80" alt="Champagne" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Dom Pérignon Brut</h4>
+                  <span class="menu-card-price">Rs 28,000</span>
+                </div>
+                <p class="menu-card-desc">
+                  The pinnacle of champagne — complex, elegant, and perfectly
+                  suited for celebrations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-category" id="desserts">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=80" alt="Chocolate" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Valrhona Fondant</h4>
+                  <span class="menu-card-price">Rs 1,450</span>
+                </div>
+                <p class="menu-card-desc">
+                  Warm dark chocolate fondant with a molten center, served with
+                  Madagascar vanilla ice cream.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80" alt="Tiramisu" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Classic Tiramisu</h4>
+                  <span class="menu-card-price">Rs 1,250</span>
+                </div>
+                <p class="menu-card-desc">
+                  Layers of espresso-soaked ladyfingers and mascarpone cream,
+                  dusted with cocoa and gold leaf.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80"
+                alt="Crème Brûlée" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Vanilla Crème Brûlée</h4>
+                  <span class="menu-card-price">Rs 1,150</span>
+                </div>
+                <p class="menu-card-desc">
+                  Silky vanilla bean custard with a perfectly caramelized sugar
+                  crust and fresh berries.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80"
+                alt="Cheesecake" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Basque Burnt Cheesecake</h4>
+                  <span class="menu-card-price">Rs 1,350</span>
+                </div>
+                <p class="menu-card-desc">
+                  Creamy San Sebastián-style cheesecake with a caramelized top
+                  and berry compote.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Macarons" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Assorted Macarons</h4>
+                  <span class="menu-card-price">Rs 950</span>
+                </div>
+                <p class="menu-card-desc">
+                  A selection of six handcrafted French macarons in pistachio,
+                  rose, salted caramel, and more.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Sorbet" />
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h4 class="menu-card-title">Tropical Sorbet Trio</h4>
+                  <span class="menu-card-price">Rs 850</span>
+                </div>
+                <p class="menu-card-desc">
+                  Mango passionfruit, coconut lime, and raspberry basil sorbets
+                  with fresh fruit garnish.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="section-header">
+        <h2>Our <span style="color: var(--gold)">Story</span></h2>
+        <div class="gold-line"></div>
+        <p>
+          From a dream to one of Lahore's most celebrated dining destinations.
+        </p>
+      </div>
+
+      <div class="about-container">
+        <div class="about-story">
+          <img
+            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80"
+            alt="Restaurant Interior" />
+          <div class="about-story-text">
+            <h3>A Legacy of <span class="gold">Passion</span></h3>
+            <p>
+              Velvet & Gold was born in 2018 from a simple yet powerful vision:
+              to create a space where exceptional food, warm hospitality, and
+              timeless elegance converge into an unforgettable experience.
+            </p>
+            <p>
+              What began as a modest 12-table bistro in the heart of Gulberg has
+              grown into one of Lahore's most sought-after fine dining
+              establishments — without ever losing the intimacy and soul that
+              defined our earliest days.
+            </p>
+            <div class="quote">
+              "We don't just serve meals. We craft memories that linger long
+              after the last bite."
+            </div>
+            <p>
+              Every element of Velvet & Gold — from the hand-selected marble
+              floors to the custom-blended spice mixes in our kitchen — reflects
+              a commitment to excellence that borders on obsession. Our team of
+              28 culinary and service professionals shares a singular mission:
+              to make every guest feel like the most important person in the
+              room.
+            </p>
+          </div>
+        </div>
+
+        <div class="chef-section">
+          <h3>Meet Our <span class="gold">Culinary Team</span></h3>
+          <div class="chef-grid">
+            <div class="chef-card">
+              <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=800&q=80" alt="Chef Ahmed" />
+              <h4>Chef Ahmed Raza</h4>
+              <p class="role">Executive Chef</p>
+              <p>
+                With 18 years of experience across Michelin-starred kitchens in
+                London and Dubai, Chef Ahmed brings a rare blend of classical
+                French technique and deep respect for Pakistani flavors.
+              </p>
+            </div>
+            <div class="chef-card">
+              <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=800&q=80" alt="Chef Sara" />
+              <h4>Chef Sara Malik</h4>
+              <p class="role">Pastry Chef</p>
+              <p>
+                Trained at Le Cordon Bleu Paris, Sara transforms desserts into
+                edible art. Her chocolate work has been featured in
+                international culinary magazines.
+              </p>
+            </div>
+            <div class="chef-card">
+              <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=800&q=80" alt="Chef Omar" />
+              <h4>Chef Omar Farooq</h4>
+              <p class="role">Sous Chef</p>
+              <p>
+                A rising star in Pakistan's culinary scene, Omar leads our grill
+                station with precision and creativity, specializing in
+                wood-fired meats and seafood.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="section-header">
+        <h2>Get in <span style="color: var(--gold)">Touch</span></h2>
+        <div class="gold-line"></div>
+        <p>
+          Reservations, inquiries, or just a friendly hello — we would love to
+          hear from you.
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Contact <span class="gold">Information</span></h3>
+
+            <div class="map-placeholder">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Interactive Map Placeholder</span>
+              <span style="font-size: 0.75rem; color: var(--text-dim)"
+                >42-B Main Boulevard, Gulberg III, Lahore</span
+              >
+            </div>
+
+            <a
+              href="https://wa.me/923001234567"
+              target="_blank"
+              class="whatsapp-btn">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+              </svg>
+              Reserve via WhatsApp
+            </a>
+
+            <div class="contact-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <div>
+                <h4>Address</h4>
+                <p>
+                  42-B Main Boulevard, Gulberg III<br />Lahore, Punjab 54000,
+                  Pakistan
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <div>
+                <h4>Phone</h4>
+                <p>+92 300 123 4567<br />+92 42 3578 9012</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <div>
+                <h4>Opening Hours</h4>
+                <table class="hours-table">
+                  <tr>
+                    <td>Monday — Thursday</td>
+                    <td>6:00 PM — 11:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Friday — Saturday</td>
+                    <td>6:00 PM — 12:00 AM</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>12:00 PM — 10:00 PM</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <div>
+                <h4>Email</h4>
+                <p>reservations@velvetandgold.pk<br />hello@velvetandgold.pk</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Send us a <span style="color: var(--gold)">Message</span></h3>
+            <form action="https://formspree.io/f/mdajzlbk" method="POST">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+92 300 123 4567" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Reservation, Feedback, etc." />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us how we can help you..."
+                  required></textarea>
+              </div>
+              <button type="submit" class="form-submit">Send Message</button>
+            </form>
+            <p
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-logo">Velvet <span>& Gold</span></div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+          </svg>
+        </a>
+      </div>
+      <p>
+        © 2026 Velvet & Gold. All rights reserved. Crafted with passion in
+        Lahore, Pakistan.
+      </p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
